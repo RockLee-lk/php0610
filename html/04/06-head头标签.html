@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>head头标签</title>
+	<meta http-equiv="refresh" content="5; url=http://www.baidu.com">
+	<!-- 经过五秒以后跳转到百度网站 -->
+	<!-- meta标签不能把多个属性合在一起写,第一个meta标签是设置编码,第三个是重定向,不能放在一个meta内 -->
+	<meta name="keywords" content="烤鸡,烤鸭">
+	<!-- 这是提高搜索引擎的关键字功能的 -->
+
+	<meta name="description" content="这绝对是最好吃的烤鸭">
+	<link rel="stylesheet" href="./test.css">
+	<script src="./test.js"></script>
+	<link rel="icon" href="./favicon.ico">
+
+</head>
+<body>
+	<h1>head头标签</h1>
+	<hr>
+	<!-- 
+		head头标签主要是操作头标签
+
+		1.设置编码
+		<meta charset="utf-8">
+		utf-8是“编码”
+		了解一下编码，ASCII码的历史
+
+		2.网页标题
+		<title>这里放的是标题</title>
+
+		3.重定向
+		<meta http-equiv="refresh" content="秒数;url=地址">
+		refresh就是刷新的意思,整个标签就是从刷新开始后,经过多少秒后跳转
+
+		4.关键词
+		<meta name="keywords" content="关键字1,关键字2,...">
+		类似的还有很多,比如把keywords换成description
+
+		5.描述
+		<meta name="description" content="描述内容">
+
+		6.导入css(绝对是重点)
+		<link rel="stylesheet" href="css文件地址">
+
+		7.导入js
+		通过一个标签来导入(双标签)
+		<script src="js文件地址"></script>
+		js这里文件地址用的是src="",要注意和导入css区分开来
+
+		8.导入icon图标
+		<link rel="icon" href="图标地址">
+		这个相当于选项卡里面显示的小图标,类似于百度一下的熊猫掌
+
+
+
+
+
+		tips
+		提高排名的标签
+		<title></title>
+		<h1></h1>
+		<meta name="keywords">
+		<meta name="description">
+		都是唯一的,都不可以写多个,h1可以写多个但是会被搜索引擎封杀
+
+
+
+	 -->
+
+</body>
+</html>

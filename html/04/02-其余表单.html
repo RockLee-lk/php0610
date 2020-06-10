@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>其余表单</title>
+</head>
+<body>
+	<h1>其余表单</h1>
+	<hr>
+
+	<!--
+		select下拉表单
+			子标签是: option负责每个下拉显示的内容
+
+
+		textarea 多文本域表单
+			多文本域标签有属性:
+				属性:rows	控制行数
+					 cols   控制列数
+
+				多文本域的默认值:正文内容(也就是开始标签和结束标签之间的内容),而不是value
+
+		button 这个按钮是个标签,而不是属性值,不要记错了
+			   之前提到的button是type(类型)属性的一个属性值
+			   功能,提交,但是一般来说是配合js来使用的.如果只是单纯的提交,我们一般就直接使用submit
+
+			   button标签,也就是一个按钮,按钮上面显示的字样不是value值,是正文内容
+
+
+	 -->
+	<form>
+		户籍: <select name="address">
+				<option value="">上海</option>
+				<option value="">江苏</option>
+				<option value="">福建</option>
+				<option value="">安徽</option>
+				<option value="">云南</option>
+				<option value="">广东</option>
+				<option value="">广西</option>
+				<option value="">黑龙江</option>
+		
+
+			  </select>
+			  <br>
+
+			  <input type="submit" name="" value="这是一个submit标签">
+			  <button>button标签</button>
+			  <!-- 两个按钮一个显示正文内容,一个显示value -->
+		
+		
+
+		评论: <textarea></textarea>
+
+
+
+
+	</form>
+
+
+</body>
+</html>

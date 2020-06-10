@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>伪类选择器</title>
+	<style type="text/css">
+		
+
+
+
+		input{
+			border: 2px solid gray; /* 直接先照搬css,后期慢慢积累css*/
+			outline: none; 			/* 取消input轮廓*/
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<h1>伪类选择器</h1>
+	<hr>
+	<!-- 
+		格式1:
+			s1:hover{...}
+			当鼠标悬停在s1上时,触发css
+
+			技巧:hover可以配合关联选择器使用
+			s1:hover s2{...} 	当鼠标悬停在s1上时,s2触发css
+			s1:hover>s2{...} 	当鼠标悬停在s1上时,s2触发css
+			s1:hover+s2{...} 	当鼠标悬停在s1上时,s2触发css
+			s1:hover~s2{...} 	当鼠标悬停在s1上时,s2触发css
+
+
+		格式2:
+		 	s1:focus{...}
+		 	当s1获取到光标时,触发css
+
+
+		 格式3:
+
+		 先父级,然后找顺序,然后找元素
+		 	先定位父级,再定位到父级下的第一个儿子级别,最后再判断下一级别是否是s2
+
+		 	s1 s2:first-child{...}
+		 	s1 s2:last-child{...}
+		 	s1 s2:nth-child(num){...}(指定一下第几个儿子)
+		
+		先父级,然后找元素,然后找到元素再找顺序	
+			先找到父级,再定位到父级下的所有要的儿子级别s2,最后再找到要的儿子级别里面的第一个
+		 	s1 s2:first-of-type{....}
+		 	s1 s2:last-of-type{...}
+		 	s1 s2:nth-of-type(num){...}
+
+		 		num技巧:
+		 			1.可以写数字
+		 			2.单词
+		 				odd 	奇数
+		 				even	偶数
+
+		 		  	3.公式 一元一次方程
+		 		  		2n 	
+		 		  		3n
+		 		  		2n+1
+		 		  		3n+2
+
+
+
+
+	 -->
+
+
+
+</body>
+</html>

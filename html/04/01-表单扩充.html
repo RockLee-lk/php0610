@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>表单2</title>
+</head>
+<body>
+	<!-- 
+		input表单
+			type值 text
+				   password
+				   radio
+				   checkbox
+				   number
+				   email   邮箱,但是只做最简单的邮箱格式验证,后期学习过了正则就知道怎么给邮箱输入框做条件约束了
+				   url     地址表单,也只能做一个简单的网址验证(协议+域名的格式就可以了)
+				   search  搜索,注意的是只能作为语义化标签使用
+				   submit  提交,提交给form的action属性
+				   button  自定义按钮,本身没有什么作用,配合js使用
+				   hidden  隐藏域,主要用于存储相对来说比较重要的信息但是又不想让用户能在浏览器上就看见的的内容
+				   file
+
+
+
+
+
+
+			这是一个很重要的type属性值,文件
+			将对file属性值的表单着重加强练习
+
+	 -->
+
+
+
+	 <!-- 	
+	 		上传文件的三个必要条件:
+	 			1.form标签有 method="post" 这一属性和属性值
+	 			2.form标签有enctype=multipart/form-data 属性
+	 			3.file标签有 name属性
+ 
+	  -->
+
+
+	 <form action="test.php">
+
+
+	 	电话:<input type="texyt" name="tel"><br>
+	 	密码:<input type="password" name="psw"><br>
+	 	性别:
+			<input type="radio" name="sex" value="1">男性
+	 	    <input type="radio" name="sex" value="2">女性
+	 	    <br>
+	 	兴趣爱好:
+	 		<input type="checkbox" name="hobby[]" value="1">篮球
+	 		<input type="checkbox" name="hobby[]" value="2">足球
+	 		<input type="checkbox" name="hobby[]" value="3">排球
+	 		<input type="checkbox" name="hobby[]" value="4">溜溜球
+	 		<input type="checkbox" name="hobby[]" value="5">气球
+	 		<input type="checkbox" name="hobby[]" value="6">皮球
+	 		<br>
+	 	单价:<input type="number" name="price">
+	 	......
+
+
+
+	 	<!-- 
+
+
+
+	 	 -->
+	 	
+
+
+
+
+
+
+
+	 </form>
+
+
+
+
+
+</body>
+</html>

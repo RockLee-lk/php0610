@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>大分帧,大窗口</title>
+</head>
+<!-- body>
+	<h1>大分帧,大窗口</h1>
+	<hr> -->
+	<!-- 
+		分帧标签
+			设置分帧: frameset
+				属性:
+					rows	行分
+					cols 	列分
+
+
+					noresize 禁止拖动窗口,size,尺寸
+					frameborder="0"or 非0(0代表不显示分帧窗口的线条)
+					用这个属性来隐藏分帧之间的默认分割线
+
+
+
+
+			分帧: frame(单标签)
+				给该标签加属性src
+					src 	内容的来源地址
+					name 	给窗口取名
+
+
+		注意点:
+			frameset 与body 不能同时存在,因此,frameset常用于后台,不用于前台
+			只能分帧内套body
+			不能body内套分帧
+
+	 -->
+
+	 <!-- 自定义分帧内容 -->
+	 	<!-- noresize这个属性可以固定死分帧窗口的比例 -->
+	 		<!-- *号在这代表获取剩余所有部分 -->
+
+<!-- 	 <frameset rows="20%, 80%" noresize frameborder = 1>
+	 	<frame src="http://www.baidu.com">
+	 	<frameset cols="15%, *">
+	 		<frame src="http://www.qq.com">	
+	 		<frame>
+	 	</frameset>
+	 </frameset> -->
+
+
+	 <!-- 跳转窗口 -->
+	 <!-- 使用target="right" ,自定义窗口name名,可以指定跳转到指定窗口-->
+
+	 <frameset rows="20%, 80%" noresize frameborder=1>
+	 	<!-- noresize这个属性可以固定死分帧窗口的比例 -->
+	 	<frame src="./view/top.html">
+	 	<frameset cols="15%, *">
+	 		<!-- *号在这代表获取剩余所有部分 -->
+	 		<frame src="./view/left.html">	
+	 		<frame src="./view/right.html" name="right">
+	 	</frameset>
+	 </frameset>
+
+	 <!-- 给不同的窗口标签，也就是frame这个分帧窗口标签添加name属性，然后结合超链接的target属性="属性名" 这个指定name窗口跳转-->
+	 <!-- target="_blank" -->
+
+	 <!-- target="_top"可以用于注销,整个页面都跳转到注销成功的界面 -->
+
+
+
+<!-- </body> -->
+</html>

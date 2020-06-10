@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>表格</title>
+</head>
+<body>
+
+	<h1>表格</h1>
+	<hr>
+	<!-- 
+		利用表格来设计循环:先看行,再看列
+		
+		标签:
+			table: 表格声明标签
+			caption: 表格标签
+			tr: 表行
+			th: 表头列	一行或者一列的归纳
+			td: 单元格列 具体的内容
+
+		属性:
+			border 边框
+			cellspacing 外边距,边框与边框之间的距离
+			cellpadding  内边距,边框与内容之间的距离
+			width	宽度
+			height	高度
+			rowspan 行合并
+			colspan 列合并
+			align   水平对齐方式 left right center
+			valign	垂直对齐方式 top  bottom middle
+			bgcolor 背景颜色
+			background 背景图片 background="orange"
+
+
+	 -->
+	 <table border="1px" cellspacing="0px" cellpadding="20px" width="1000px" height="800px" align="center" background="../xx/xx/xx.jpg">
+	 	<caption>课程表</caption>
+	 	<tr align="center" bgcolor="orange">
+	 		<th colspan="2"></th>
+	 		<!-- <th></th> -->
+	 		<th>星期一</th>
+	 		<th>星期二</th>
+	 		<th>星期三</th>
+	 		<th>星期四</th>
+	 		<th>星期五</th>
+	 		<th>星期六</th>
+	 		<th>星期天</th>
+
+	 	</tr>
+	 	<tr>
+	 		<td>下午</td>
+	 		<td>1</td>
+	 		<td>体育</td>
+	 		<td>体育</td>
+	 		<td>数学</td>
+	 		<td>语文</td>
+	 		<td>英语</td>
+	 		<td></td>
+	 	</tr>
+	 	<tr></tr>
+	 	<tr></tr>
+	 	<tr></tr>
+	 	<tr></tr>
+	 	<tr></tr>
+	 	<tr></tr>
+	 	<tr></tr>
+	 	<tr></tr>
+
+
+
+	 </table>
+</body>
+</html>

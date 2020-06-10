@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>变形</title>
+	<style type="text/css">
+		img{ transition: all .5s; }
+		img:nth-of-type(1):hover{ transform: rotate(30deg); }
+		img:nth-of-type(1):hover{ transform: rotate(-30deg); }
+		img:nth-of-type(1):hover{ transform: rotate(720deg); }
+		img:nth-of-type(2):hover{ transform: rotateX(360deg); }
+		img:nth-of-type(3):hover{ transform: rotateY(360deg); }
+
+
+		img:nth-of-type(4):hover{ transform: skew(30deg); }
+		/*skew,扭曲,拉着图片左上角和右下角做菱形扭曲变化,90度就拉成直线了*/
+
+		/*正数就是顺时针旋转的角度*/
+
+	</style>
+</head>
+<body>
+	<h1>变形</h1>
+	<hr>
+	<!-- 
+		transition: none 	取消变形
+					rotate	旋转 	单位:度 deg
+					rotate()
+					rotateX()
+					rotateY()
+
+
+					skew 	扭曲  	单位:度 deg
+					skewX() 在X轴的方向上拉
+					skewY() 在Y轴的方向上拉
+
+
+					scale 	中心缩放
+					1就是代表本身,1.5,2就是倍数,如果是0.5那就是缩小
+
+
+					translate 	位移 	单位:像素 px
+					translateX() 	在x轴上移动,正是向右
+					translateY() 	在y轴上移动,正是向左
+					translate(x,y) 	直接写两个参数
+
+
+
+
+	 -->
+
+	 <img src="./Meinv007.jpg" height="200px">
+
+
+
+</body>
+</html>

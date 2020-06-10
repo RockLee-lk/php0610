@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>文本</title>
+	<style type="text/css">
+		.box{
+			width:300px;
+			height: 300px;
+			border: 2px solid red;
+			text-align: center;
+			text-align: left;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>文本</h1>
+	<hr>
+	<!-- 
+		text-align: 水平对齐方式 		left 	center 	right
+		文本水平对齐不止是可以操作文本,如果内容是图片也一样可以操作
+
+		既然有水平对齐,自然也就会有垂直对齐
+
+		vertical-align:垂直对齐方式 	top  	middle 	bottom
+
+		要注意,这里的对齐不是对内对齐,而是对外对齐
+		可以给一个box标签添加一个这样的css属性试试看
+
+		想要让文本垂直居中的话:
+			方式1:
+				line-height:300px;
+
+			方式2:
+				vertical-align:middle;
+				配合
+				display:table-cell; 	作用:将当前元素转为td单元格,不管你本质上是p标签还是a标签还是box标签
+				转换为td单元格以后就可以支持文字居中了
+			实现对内垂直居中
+
+
+		text-indent:	首行缩进
+			text-indent:2em;
+
+
+
+		text-shadow: 	文字阴影
+			text-shadow:1px 2px 3px blue;
+
+			1px 	阴影水平的位移,方向向右
+			2px 	阴影垂直的位移,方向向下
+			3px 	阴影的模糊程度,不能为负数,0的时候一点不模糊
+			blue 	颜色
+
+		text-overflow: 		文本溢出
+			text-overflow:ellipsis;			将溢出的隐藏内容用...省略号来代替,但是单独使用没卵用,需要配合overflow:hidden;和white-space:nowrap
+
+		overflow:hidden; 	将溢出内容隐藏
+
+
+
+
+		white-space: nowrap;(效果是强制转化为一样,这样的话就算溢出也只是在水平溢出,而不会做垂直溢出)
+
+		text-decoration:文本划线
+						分别有哪些值:
+							none 		取消划线
+							underline 	下划线
+							overline	上划线
+							line-through删除线
+
+
+		补充一下:设置带有样式颜色的划线
+		text-decoration:underline red solid;
+		text-decoration:underline red wavy;
+
+	 -->
+
+	 <div class="box"></div>
+
+
+</body>
+</html>

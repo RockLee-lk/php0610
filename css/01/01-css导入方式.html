@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>CSS导入方式</title>
+	<link rel="stylesheet" type="text/css" href="./test.css">
+	<style>
+		@import url('./test.css');
+
+
+
+		p{
+			color: red;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<h1>CSS导入方式</h1>
+	<hr>
+	<!-- 
+		html 专业名词: 超文本标记语言
+		css 专业名词: 层叠样式表
+
+		css文件:  xxx.css
+		后缀名就是css
+
+		4种导入方式:
+		1.外链式
+			在head头标签中,通过link标签来导入css文件
+			<link rel="stylesheet"  href="css地址">
+			正式项目推荐使用
+
+
+		2.内联式
+			在head头标签中,通过style标签 来直接书写css代码
+			(直接写在了html文件内了,而不是写在别的xxx.css文件中)
+			因为这种方式css代码直接都显示在了html文件中,所以正式项目是不推荐这种方式,测试代码的时候推荐使用,方便修改和查看
+
+			<head>
+				<style>
+					选择器{
+						属性名:属性值;
+						属性名:属性值;
+						...
+						属性名:属性值;
+
+					}
+
+
+			 	</style>
+			</head>
+
+
+		内联式写代码测试的时候比较方便,项目正式上线的时候也很简单的可以转变到外链式
+
+
+		3.内嵌式(优先级太高,建议少用)
+			在开始标签中通过style属性来书写css代码
+			这也是在html文件内直接书写,但是不是写在头标签,而是写在开始标签中,通过style属性
+			格式:
+
+			<开始标签 style="属性名:属性值;属性名:属性值;..."
+
+
+		4.导入式
+			在head头标签中通过style标签来导入css文件2
+
+			<head>
+				<style>
+				@import url(css地址);
+
+				</style>
+
+
+			</head>
+
+			注意点:导入式的代码必须写在style标签里面的最前面!!!!!!!!!!!!!!!!!
+
+
+
+
+		外链式和导入式都有一个导入的过程,css文件是在html文件外部
+			外链式: 先加载css,再加载html(head头标签内的link标签)
+			导入式: 先加载html,再加载css(head头标签内的style标签)
+
+
+	 -->
+
+
+		<p>床前明月光</p>
+
+		<b style="color:blue">疑是地上霜</b>
+</body>
+</html>

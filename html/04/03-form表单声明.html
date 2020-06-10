@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cn'">
+<head>
+	<meta charset="utf-8">
+	<title>form表单声明</title>
+</head>
+<body>
+
+	<h1>表单声明</h1>
+	<hr>
+	<!-- 可以注意到,表单提交的数据提交给谁都是由form这个表单声明标签的action属性的后面的属性值决定的 -->
+	<form action="./test.php" method="get"><!-- 提交方式,一定要记得get和post两种提交方式的区别 -->
+
+		<!-- 
+			form属性
+				action  将表单提交给  某某服务器
+						不填写值的话,则默认提交给本文件(自己)
+
+						表单若是连name都没有,不能提交给服务器
+						属性值就是自己提交的接受方
+
+
+				method  表单以什么方式提交给服务器,由这个属性的两种不同的属性值决定方式
+					
+					get  这是默认的
+						 明文传输(不做任何修饰,在网址栏直接显示)
+						 因为不加密直接明文传输,所以速度快
+						 安全性低
+						 传输大小: 在http协议上无限制,理论上.但是浏览器做了2kb的限制
+
+
+
+					post 密文传输
+						 相比较get来说需要加密隐藏,所以速度慢
+						 安全性高
+						 传输大小: 在http协议上是没有限制的,但是实际受到服务器的性能的限制
+
+
+
+				 enctype
+				 	属性值:multipart/form-data  这个属性配套属性值,只有在产生了上传文件的需求时才需要
+		 -->
+		<!-- action后面如果没有值,默认提交给自己 -->
+
+		电话: <input type="text" name="tel"><br>
+		密码: <input type="password" name="psw"><br>
+
+
+
+
+
+
+
+
+
+
+	</form>
+	
+
+
+
+
+</body>
+</html>

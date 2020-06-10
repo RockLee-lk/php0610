@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>背景</title>
+	<style>
+		.box{
+			width:800px;
+			height: 1000px;
+			background-color: #ccc;
+			background-image: url('./photo.jpg');
+			background-repeat: no-repeat;/*背景只填充一张,不重复*/
+			background-position: 100px 100px; /*分别代表x轴y轴的移动,可以给负数*/
+			background-position: center center; /*这样的话背景图片就直接在正中间*/
+			background-size: 300px; 这里不止是可以用像素
+
+		}
+		
+
+
+
+	</style>
+</head>
+<body>
+	<h1>背景</h1>
+	<hr>
+	<!-- 
+		background-color: 	背景颜色
+				  -image: 	背景图片 	写法格式:url('这里写图片地址'');
+				  -repeat: 	背景重复 	写no-repeat
+				  -position:背景定位 	x轴y轴,正数是代表右边移动和下边移动,负数代表左和上
+
+				  -size: 	背景大小
+
+
+		简写的方式:
+			background:[color | image | repeat | position[/size] ]
+			顺序可以点到,但是size必须在position后面
+			对背景需要做什么改动就写什么,随便写,size要注意
+
+			没有先后顺序,也不是必须写
+
+
+	
+
+	 -->
+
+	 <div class="box"></div>
+
+</body>
+</html>

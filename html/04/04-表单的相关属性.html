@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>表单相关属性</title>
+</head>
+<body>
+	<h1>表单相关属性</h1>
+	<!-- 
+		type	表单类型(注意,不同的表单类型不要和后面的不同的标签混淆)
+		name    给表单取一个name,名字
+		value 	给表单赋值
+
+
+		placeholder    背景字
+		maxlength	最大长度
+		minlentgh   最小长度(限制了输入的内容的长度)
+		checked		默认选中,适用于单复选框
+		selected	默认选中,适用于下拉框
+
+
+		readonly	只读,都只能看不能改,但能提交给服务器
+		disabled	禁用,也只能看不能改,不能提交给服务器
+		这两个只能看不能修改
+
+		autofoucus 	自动获取光标
+		autocomplete自动提示(默认是开着的,提示历史记录)
+					On 开启提示
+					Off 关闭提示
+
+		multiple    多选文件
+		required   	不能为空
+	 -->
+	 <form action="">
+	 	电话:<input type="text" name="tel" placeholder="your tel" maxlength="11" autofocus autocomplete="On"><br>
+	 	密码:<input type="password" name="psw" minlength="6"><br>
+	 	性别:
+	 		 <input type="radio" name="sex">男
+	 		 <input type="radio" name="sex" checked>女
+	 		 <br>
+	 	户籍:<select>
+	 			<option>--请选择户籍</option>
+	 			<option value="1" selected>上海</option>
+	 			<option value="2">xxx</option>
+	 			<option value="3">下海</option>
+	 			<option value="4">左海</option>
+	 			<option value="5">右海</option>
+	 			<option value="6">中海</option>
+	 		</select>
+	 		<br>
+	 	昵称1:<input type="text" name="nickname1" value="二狗" readonly><br>
+	 	昵称2:<input type="text" name="nickname2" value="二黑" disabled><br>
+
+	 	多文件:<input type="file" name="icon" multiple><br>
+	 	<!-- multiple这个属性可以让表单支持多文件 -->
+	 	
+	 	<input type="submit">
+	 </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>平滑过渡</title>
+	<style type="text/css">
+		.box{
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+		.box:hover{
+			background: green;
+			/*这就不是平滑过渡，当光标覆盖到box类名的标签的时候出发css*/
+		}
+	</style>
+</head>
+<body>
+	<h1>平滑过渡</h1>
+	<hr>
+	<!-- 
+		作用:将某些元素慢慢的进行转换
+		条件限制:仅适合能+-的数据
+
+		属性:
+			transition:属性名 	转换时间 	转换速率 	延迟时间(从触发开始到开始实现效果的时间)
+
+		一次性过渡多个属性
+			transition:属性名 	转换时间		转换速率 	延迟时间,属性名 	转换时间 	转换速率 	延迟时间,...
+
+		有什么改变就过渡什么属性
+			transition: all 转换时间  转换速率 	延迟时间,...
+
+
+		属性值:
+			转换时间: 	单位:s或者ms
+			转换速率:
+					linear 		匀速
+					ease 		逐渐变慢
+					ease-in	  	加速
+					ease-out 	减速
+					ease-in-out 先加速再减速
+					cubic-bezier(s1, s2, s3, s4) 	自定义速度,配合F12调整
+
+			延迟时间 	单位: s或 ms
+
+
+
+
+
+			平滑过渡这个属性控制的就是一个css效果生效的时间和方式，首先要有触发css功能，其次才能给这个功能附加
+
+
+
+	 -->
+
+
+	 	<div class="box"></div>
+
+</body>
+</html>
